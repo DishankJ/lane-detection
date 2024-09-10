@@ -49,7 +49,7 @@ def bitmap_generation(image, averaged_lines, left_line_parameters):
     lane_region = np.zeros_like(image)
     polygons = np.array([polygon])
     cv2.fillPoly(bitmap, polygons, color=(0,0,0))
-    cv2.fillPoly(lane_region, polygons, color=(255,0,0))
+    cv2.fillPoly(lane_region, polygons, color=(255,255,255))
     return bitmap, lane_region
 
 def display_lines(image, lines):
